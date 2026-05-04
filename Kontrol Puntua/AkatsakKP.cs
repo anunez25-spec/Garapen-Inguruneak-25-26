@@ -14,8 +14,8 @@ for (int i = 0; i < balioak.Length; i++)
 {
     batura += balioak[i];
 }
-
-int batazBestekoa = batura;
+//Batazbestekoa jakiteko zatitu behar da.
+int batazBestekoa = batura / balioak.Length;
 Console.WriteLine($"2. Batez bestekoa: {batazBestekoa}");
 
 
@@ -25,6 +25,8 @@ int kontagailua = 0;
 while (kontagailua < 5)
 {
     Console.WriteLine($"4. Kontagailua: {kontagailua}");
+    kontagailua++;+
+        //bukle infinitoa eukiko zuelako
 }
 
 
@@ -37,9 +39,11 @@ int karratua = 0;
 foreach (int zenbakia in arrayZenbakiak)
 {
     karratua = zenbakia * zenbakia;
+    Console.WriteLine($"Zenbakiaren karratua: {karratua}");
+    //azken balioa pantailaratzen zuen
 }
 
-Console.WriteLine($"Zenbakiaren karratua: {karratua}");
+
 
 
 // 4. AKATSA
@@ -48,7 +52,8 @@ int emaitza = 0;
 
 for (int i = 0; i < balioMistoa.Length; i++)
 {
-    emaitza += balioMistoa[i] + balioMistoa[i];
+    //bi aldiz zegoen, emaitza bi aldiz aterako zen
+    emaitza += balioMistoa[i];
 }
 
 Console.WriteLine($"7. Zenbakien batura: {emaitza}");
