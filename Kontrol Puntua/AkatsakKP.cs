@@ -14,8 +14,8 @@ for (int i = 0; i < balioak.Length; i++)
 {
     batura += balioak[i];
 }
-
-int batazBestekoa = batura;
+// batazbestekoa kalkulatzeko zatidura egin behar da
+int batazBestekoa = batura / balioak.Length;
 Console.WriteLine($"2. Batez bestekoa: {batazBestekoa}");
 
 
