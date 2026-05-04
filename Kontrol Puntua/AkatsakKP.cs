@@ -25,6 +25,8 @@ int kontagailua = 0;
 while (kontagailua < 5)
 {
     Console.WriteLine($"4. Kontagailua: {kontagailua}");
+    kontagailua++;
+    // bukle infinitoa geratzen delako
 }
 
 
@@ -37,9 +39,11 @@ int karratua = 0;
 foreach (int zenbakia in arrayZenbakiak)
 {
     karratua = zenbakia * zenbakia;
+    Console.WriteLine($"Zenbakiaren karratua: {karratua}");
+    //azken balioa bakarrik pantailartzen zuelako
 }
 
-Console.WriteLine($"Zenbakiaren karratua: {karratua}");
+
 
 
 // 4. AKATSA
