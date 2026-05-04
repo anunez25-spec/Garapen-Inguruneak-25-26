@@ -48,7 +48,8 @@ int emaitza = 0;
 
 for (int i = 0; i < balioMistoa.Length; i++)
 {
-    emaitza += balioMistoa[i] + balioMistoa[i];
+    emaitza += balioMistoa[i];
+    //BALIO BI ALKDIZ AZALTZEN DELAKO
 }
 
 Console.WriteLine($"7. Zenbakien batura: {emaitza}");
